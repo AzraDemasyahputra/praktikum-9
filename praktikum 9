@@ -4,3 +4,11 @@ Sintaks untuk pernyataan yaitu :
 menyatakan Ekspresi[, Argumen]
 
 Jika pernyataan gagal, Python menggunakan ArgumentExpression ArgumentExpression sebagai argument argument untuk AssertionError AssertionError. Pengecualian AssertionError Pengecualian AssertionError dapat ditangkap dan ditangani seperti mengaktifkan lainnya menggunakan try- kecuali terminal, tetapi jika dibiarkan, mereka akan menghentikan program dan menghasilkan backtrace.
+Contoh
+Berikut adalah fungsi fungsi yang mengubah suhu dari derajat Kelvin menjadi derajat Fahrenheit. Karena nol derajat Kelvin dingin, fungsi penyimpanan jika melihat suhu negatif negatif.
+
+langkah Pengecualian
+Jika Anda memiliki beberapa kode mencurigakan yang mungkin menarik perhatian, Anda dapat mempertahankan program Anda dengan meletakkan kode yang mencurigakan di *coba: blok. Setelah coba: blok, sertakan proxy sertakan * kecuali : pernyataan, diikuti oleh kode blok yang menangani masalah seanggun mungkin.
+
+Contoh
+Contoh-contoh ini membuka file, menulis konten file, dan keluar dengan aman karena tidak ada masalah
