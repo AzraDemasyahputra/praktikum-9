@@ -1,4 +1,4 @@
-Pernyataan Tegas
+## pertanyaan tugas
 Saat menemukan rahasia, Python menilai ekspresi yang menyertainya, yang mungkin benar. Jika ekspresi salah, Python mengeluarkan serunya AssertionError.
 Sintaks untuk pernyataan yaitu :
 menyatakan Ekspresi[, Argumen]
@@ -12,3 +12,9 @@ Jika Anda memiliki beberapa kode mencurigakan yang mungkin menarik perhatian, An
 
 Contoh
 Contoh-contoh ini membuka file, menulis konten file, dan keluar dengan aman karena tidak ada masalah
+
+Fasal kecuali tanpa Pengecualian
+Anda juga dapat menggunakan pernyataan exception tanpa exception yang didefinisikan sebagai berikut:
+coba: Anda melakukan operasi Anda di sini; ...................... kecuali: Jika ada pengecualian, maka jalankan blok ini. ...................... lain: Jika tidak ada pengecualian maka jalankan blok ini.
+
+Pernyataan coba-kecuali jenis ini menangkap semua kesenangan yang ditawarkan. Menggunakan percobaan seperti try-expect pernyataan tidak dianggap sebagai praktik pemrograman yang baik, karena mereka menangkap semuanya dijual tetapi tidak membuat programmer mengidentifikasi kemungkinan penyebab masalah terjadi
