@@ -18,3 +18,7 @@ Anda juga dapat menggunakan pernyataan exception tanpa exception yang didefinisi
 coba: Anda melakukan operasi Anda di sini; ...................... kecuali: Jika ada pengecualian, maka jalankan blok ini. ...................... lain: Jika tidak ada pengecualian maka jalankan blok ini.
 
 Pernyataan coba-kecuali jenis ini menangkap semua kesenangan yang ditawarkan. Menggunakan percobaan seperti try-expect pernyataan tidak dianggap sebagai praktik pemrograman yang baik, karena mereka menangkap semuanya dijual tetapi tidak membuat programmer mengidentifikasi kemungkinan penyebab masalah terjadi
+Pengecualian yang Ditetapkan Pengguna
+Python juga memungkinkan Anda membuat kecanduan sendiri dengan menurunkan kelas-kelas dari yang standar penambahan bawaan.
+Berikut adalah contoh-contoh yang terkait dengan RuntimeError. Di sini, kelas dibuat yang merupakan subkelas dari subkelas RuntimeError. Ini berguna saat Anda perlumenampilkan tampilan informasi yang lebih spesifik saat menarik.
+Di blok coba, selesaikan yang ditentukan pengguna dimunculkan dan ditangkap di blok kecuali. Variabel itu digunakan untuk membuat instance dari kelas Networkerror.
