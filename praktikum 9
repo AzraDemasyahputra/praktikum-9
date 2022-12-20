@@ -1,0 +1,6 @@
+Pernyataan Tegas
+Saat menemukan rahasia, Python menilai ekspresi yang menyertainya, yang mungkin benar. Jika ekspresi salah, Python mengeluarkan serunya AssertionError.
+Sintaks untuk pernyataan yaitu :
+menyatakan Ekspresi[, Argumen]
+
+Jika pernyataan gagal, Python menggunakan ArgumentExpression ArgumentExpression sebagai argument argument untuk AssertionError AssertionError. Pengecualian AssertionError Pengecualian AssertionError dapat ditangkap dan ditangani seperti mengaktifkan lainnya menggunakan try- kecuali terminal, tetapi jika dibiarkan, mereka akan menghentikan program dan menghasilkan backtrace.
