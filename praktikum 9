@@ -1,24 +1,42 @@
-## pertanyaan tugas
-Saat menemukan rahasia, Python menilai ekspresi yang menyertainya, yang mungkin benar. Jika ekspresi salah, Python mengeluarkan serunya AssertionError.
-Sintaks untuk pernyataan yaitu :
-menyatakan Ekspresi[, Argumen]
+## Praktikum9
+Assert Statement
+```
+def KelvinToFahrenheit(Temperature):
+assert (Temperature >= 0),"Colder than absolute zero!"
+return ((Temperature-273)*1.8)+32
+print KelvinToFahrenheit(273)
+print int(KelvinToFahrenheit(505.78))
+print KelvinToFahrenheit(-5)
+```
 
-Jika pernyataan gagal, Python menggunakan ArgumentExpression ArgumentExpression sebagai argument argument untuk AssertionError AssertionError. Pengecualian AssertionError Pengecualian AssertionError dapat ditangkap dan ditangani seperti mengaktifkan lainnya menggunakan try- kecuali terminal, tetapi jika dibiarkan, mereka akan menghentikan program dan menghasilkan backtrace.
-Contoh
-Berikut adalah fungsi fungsi yang mengubah suhu dari derajat Kelvin menjadi derajat Fahrenheit. Karena nol derajat Kelvin dingin, fungsi penyimpanan jika melihat suhu negatif negatif.
+Exception Statement
+```
+try:
+fh = open("testfile", "r")
+fh.write("This is my test file for exception handling!!")
+except IOError:
+print "Error: can\'t find file or read data"
+else:
+print "Written content in the file successfully"
+```
+Clause
+```
+try:
+fh = open("testfile", "w")
+fh.write("This is my test file for exception handling!!")
+finally:
+print "Error: can\'t find file or read data"
+```
+Raise
+```
+def functionName( level ):
+if level < 1:
+raise "Invalid level!", level
+```
+User Defined
+```
+class Networkerror(RuntimeError):
+def __init__(self, arg):
+self.args = arg
+```
 
-langkah Pengecualian
-Jika Anda memiliki beberapa kode mencurigakan yang mungkin menarik perhatian, Anda dapat mempertahankan program Anda dengan meletakkan kode yang mencurigakan di *coba: blok. Setelah coba: blok, sertakan proxy sertakan * kecuali : pernyataan, diikuti oleh kode blok yang menangani masalah seanggun mungkin.
-
-Contoh
-Contoh-contoh ini membuka file, menulis konten file, dan keluar dengan aman karena tidak ada masalah
-
-Fasal kecuali tanpa Pengecualian
-Anda juga dapat menggunakan pernyataan exception tanpa exception yang didefinisikan sebagai berikut:
-coba: Anda melakukan operasi Anda di sini; ...................... kecuali: Jika ada pengecualian, maka jalankan blok ini. ...................... lain: Jika tidak ada pengecualian maka jalankan blok ini.
-
-Pernyataan coba-kecuali jenis ini menangkap semua kesenangan yang ditawarkan. Menggunakan percobaan seperti try-expect pernyataan tidak dianggap sebagai praktik pemrograman yang baik, karena mereka menangkap semuanya dijual tetapi tidak membuat programmer mengidentifikasi kemungkinan penyebab masalah terjadi
-Pengecualian yang Ditetapkan Pengguna
-Python juga memungkinkan Anda membuat kecanduan sendiri dengan menurunkan kelas-kelas dari yang standar penambahan bawaan.
-Berikut adalah contoh-contoh yang terkait dengan RuntimeError. Di sini, kelas dibuat yang merupakan subkelas dari subkelas RuntimeError. Ini berguna saat Anda perlumenampilkan tampilan informasi yang lebih spesifik saat menarik.
-Di blok coba, selesaikan yang ditentukan pengguna dimunculkan dan ditangkap di blok kecuali. Variabel itu digunakan untuk membuat instance dari kelas Networkerror.
